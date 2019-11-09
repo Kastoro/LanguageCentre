@@ -1,0 +1,19 @@
+mixin scripts(scripts)
+	each name in scripts
+		- src = 'js/' + name;
+		script(src=src)
+
+<!DOCTYPE html>
+html(lang="ru")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+	title Сайт языкового центра
+	link(rel="stylesheet", type="text/css", href="./css/styles.min.css")
+body
+	.wrapper
+		include blocks/header 
+		include blocks/footer
+	//Скрипты НАЧАЛО
+	+scripts(['jquery.min.js', 'owl.carousel.min.js', 'main.js'])
+	//Скрипты КОНЕЦ
