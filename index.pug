@@ -15,24 +15,7 @@ head
 body
 	.wrapper
 		include blocks/header 
-		.slider
-			p Здесь мог быть Ваш слайдер
-		.container
-			.courses
-				h2 НАШИ КУРСЫ
-				.courses-box
-					a.courses-box-item(href="")
-						p.p-courses Для взрослых
-						img(src="./images/man.png", alt="man")
-					a.courses-box-item(href="")
-						p Для детей и<br>прдростков
-						img(src="./images/girl.png", alt="girl")
-					a.courses-box-item(href="")
-						p Подготовка к<br>экзаменам
-						img(src="./images/boy.png", alt="boy")
-					a.courses-box-item(href="")
-						p Специальный<br>английский
-						img(src="./images/woman.png", alt="woman")
+		include blocks/main
 		include blocks/footer
 	//Скрипты НАЧАЛО
 	+scripts(['jquery.min.js', 'owl.carousel.min.js', 'main.js'])
