@@ -7,7 +7,7 @@
 	justify-content: space-between
 	align-items: center
 	height: 534px
-	width: 1140px
+	width: 1110px
 	margin-top: 67px
 .courses-box
 	display: flex
@@ -85,6 +85,7 @@
 	background-color: $clrYellow
 	margin-top: 80px
 	padding-top: 48px
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 	.container 
 		display: flex
 		flex-direction: column
@@ -113,7 +114,55 @@
 		line-height: 35px
 		color: $clrTopMenu
 		margin-top: 55px
+.blog
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+	height: 693px
+	width: 1110px
+	margin-top: 112px
+.blog-box
+	display: flex
+	justify-content: space-between
+	width: 100%
+.blog-box-item
+	display: flex
+	flex-direction: column
+	width: 300px
+	height: 366px
+	background-color: $clrYellow
+	text-decoration: none
+	transition: all 0.8s ease-out
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	margin-top: 104px
+	p 
+		display: blok
+		background-color: $clrYellow
+		width: 100%
+		height: 66px
+		text-align: center
+		font-size: 22px
+		line-height: 26px
+		color: $clrTopMenu
+		padding-top: 6px
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4)
+	.p-courses
+		padding-top: 18px
+	img
+		width: 100%
+		height: 300px
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	&:hover
+		text-decoration: none
+		transform: scale(1.05)
+.blog-box-bttns
+	display: flex
+	justify-content: space-between
+	margin-top: 100px
+	width: 600px
 .map
 	margin-top: 139px
 	width: 100%
 	height: 700px
+	border: none
