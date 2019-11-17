@@ -1,5 +1,32 @@
 .slider
-	p Здесь мог быть Ваш слайдер
+	.container
+		.owl-carousel.owl-theme.owl-loaded
+			.owl-stage-outer
+				.owl-stage
+					.owl-item.slider_1
+						.slider_1-textbox
+							p ПЕРВОЕ ЗАНЯТИЕ
+							h1 БЕСПЛАТНО
+							a.bttn-yellow(href="")
+								p Записаться 
+								img(src="./images/svg/arrow_blue.svg", alt="arrow_blue")
+					.owl-item.slider_2
+						.slider_2-textbox
+							h1 ДЕМОКРАТИЧНЫЕ<br>ЦЕНЫ
+							a.bttn(href="")
+								p Подробнее
+								img(src="./images/svg/arrow.svg", alt="arrow")
+					.owl-item.slider_3
+						.slider_2-textbox
+							h1 ОБУЧЕНИЕ<br>С УДОВОЛЬСТВИЕМ
+							a.bttn-yellow(href="")
+								p Записаться 
+								img(src="./images/svg/arrow_blue.svg", alt="arrow_blue")
+			.owl-nav
+				.my-owl-prev
+					p ◄
+				.my-owl-next
+					p ►
 .container
 	.courses
 		h2 НАШИ КУРСЫ
@@ -54,5 +81,23 @@
 				img(src="./images/svg/balloons.svg", alt="balloons")
 				p Тематические<br>вечера
 		a.bttn(href="") Подробнее
+.container
+	.blog
+		h2  ПОЛЕЗНЫЙ БЛОГ
+		.blog-box
+			a.blog-box-item(href="")
+				p Секреты составления<br>резюме
+				img(src="./images/articles/resume.jpg", alt="resume")
+			a.blog-box-item(href="")
+				p Памятка<br>путешественнику
+				img(src="./images/articles/travels.jpg", alt="travels")
+			a.blog-box-item(href="")
+				p IELTS или TOEFL
+				img(src="./images/articles/IELTSorTOEFL.jpg", alt="IELTSorTOEFL")
+		.blog-box-bttns
+			a.bttn-yellow(href="") Подписаться
+			a.bttn(href="") 
+				p Больше статей
+				img(src="./images/svg/arrow.svg", alt="arrow")
 .container
 	iframe.map(src="https://yandex.ru/map-widget/v1/-/CGTWzAZU")
