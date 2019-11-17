@@ -1,5 +1,32 @@
 .slider
-	p Здесь мог быть Ваш слайдер
+	.container
+		.owl-carousel.owl-theme.owl-loaded
+			.owl-stage-outer
+				.owl-stage
+					.owl-item.slider_1
+						.slider_1-textbox
+							p ПЕРВОЕ ЗАНЯТИЕ
+							h1 БЕСПЛАТНО
+							a.bttn-yellow(href="")
+								p Записаться 
+								img(src="./images/svg/arrow_blue.svg", alt="arrow_blue")
+					.owl-item.slider_2
+						.slider_2-textbox
+							h1 ДЕМОКРАТИЧНЫЕ<br>ЦЕНЫ
+							a.bttn(href="")
+								p Подробнее
+								img(src="./images/svg/arrow.svg", alt="arrow")
+					.owl-item.slider_3
+						.slider_2-textbox
+							h1 ОБУЧЕНИЕ<br>С УДОВОЛЬСТВИЕМ
+							a.bttn-yellow(href="")
+								p Записаться 
+								img(src="./images/svg/arrow_blue.svg", alt="arrow_blue")
+			.owl-nav
+				.my-owl-prev
+					p ◄
+				.my-owl-next
+					p ►
 .container
 	.courses
 		h2 НАШИ КУРСЫ
