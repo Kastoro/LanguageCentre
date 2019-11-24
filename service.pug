@@ -1,0 +1,37 @@
+mixin scripts(scripts)
+	each name in scripts
+		- src = 'js/' + name;
+		script(src=src)
+
+<!DOCTYPE html>
+html(lang="ru")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+	title Услуги
+	link(href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic-ext", rel="stylesheet")
+	link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic-ext", rel="stylesheet")
+	link(rel="stylesheet", type="text/css", href="./css/styles.min.css")
+body
+	.wrapper
+		include blocks/header
+		.service-wrap
+			h2 НАШИ КУРСЫ
+			.courses-box
+				a.courses-box-item(href="adult.html")
+					p.p-courses Для взрослых
+					img(src="./images/man.png", alt="man")
+				a.courses-box-item(href="child.html")
+					p Для детей и<br>пoдростков
+					img(src="./images/girl.png", alt="girl")
+				a.courses-box-item(href="exams.html")
+					p Подготовка к<br>экзаменам
+					img(src="./images/boy.png", alt="boy")
+				a.courses-box-item(href="profcourses.html")
+					p Специальный<br>английский
+					img(src="./images/woman.png", alt="woman")
+		include blocks/footer
+	//Скрипты НАЧАЛО
+	+scripts(['jquery.min.js', 'owl.carousel.min.js', 'main.js'])
+	//Скрипты КОНЕЦ
+	// коммент для теста github
