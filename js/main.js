@@ -40,11 +40,11 @@ $('#owl-carousel').owlCarousel({
 var owlCar = $('#owl-carousel');
 owlCar.owlCarousel();
 // Go to the next item
-$('.my-owl-next').click(function() {
+$('.rev-owl-next').click(function() {
     owlCar.trigger('next.owl.carousel');
 })
 // Go to the previous item
-$('.my-owl-prev').click(function() {
+$('.rev-owl-prev').click(function() {
     // With optional speed parameter
     // Parameters has to be in square bracket '[]'
     owlCar.trigger('prev.owl.carousel', [300]);
