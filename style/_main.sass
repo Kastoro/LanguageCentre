@@ -2,16 +2,28 @@
 .slider
 	height: 710px
 	background-color: rgba(60, 194, 195, 0.8)
+	@media (max-width: 1200px)
+		height: 550px
 .owl-carousel
 	height: 710px
 	display: flex
+	@media (max-width: 1200px)
+		height: 550px
 .owl-item.slider_1
 	height: 650px
 	background-image: url(../images/Slider1.png)
 	background-repeat: no-repeat
 	background-position: 100% 50%
+	background-size: 63%
+	@media (max-width: 1200px)
+		background-size: 57%
+		height: 500px
+	@media (max-width: 992px)
+		background-position: 50% 0%
+		background-size: 300px auto
+		height: 550px
 	p
-		font-size: 48px
+		font-size: 42px
 		color: white
 	a
 		display:flex
@@ -30,6 +42,9 @@
 	flex-direction: column
 	justify-content: center
 	align-items: center
+	@media (max-width: 992px)
+		height: 550px
+		margin: 120px auto 0 auto
 .owl-item.slider_2
 	height: 650px
 	background-image: url(../images/Slider2.png)
@@ -45,6 +60,9 @@
 		img
 			width: 25px
 			height: 25px
+	@media (max-width: 1200px)
+		height: 500px
+		background-size: 57%
 .slider_2-textbox
 	width: 610px
 	height: 100%
@@ -57,6 +75,10 @@
 	background-image: url(../images/Slider3.png)
 	background-repeat: no-repeat
 	background-position: 100% 50%
+	background-size: 63%
+	@media (max-width: 1200px)
+		background-size: 57%
+		height: 500px
 	a
 		display:flex
 		align-items: center
@@ -74,6 +96,8 @@
 	left: -100px
 	width: 118%
 	justify-content: space-between
+	@media (max-width: 1200px)
+		display: none
 .my-owl-prev
 	display: inline-block
 	cursor: pointer
@@ -117,12 +141,20 @@
 	justify-content: space-between
 	align-items: center
 	height: 534px
-	width: 1110px
+	max-width: 1110px
+	margin: 0 auto
 	margin-top: 67px
+	@media (max-width: 1200px)
+		max-width: 700px
+		height: 900px
 .courses-box
 	display: flex
 	justify-content: space-between
 	width: 100%
+	margin-top: 50px
+	@media (max-width: 1200px)
+		flex-wrap: wrap
+		justify-content: center
 .courses-box-item
 	display: flex
 	flex-direction: column
@@ -132,6 +164,7 @@
 	text-decoration: none
 	transition: all 0.8s ease-out
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	margin: 20px
 	p
 		display: blok
 		background-color: $clrBlue
@@ -147,9 +180,12 @@
 	img
 		width: 240px
 		height: 300px
+		@media (max-width: 992px)
+			display: none
 	&:hover
 		text-decoration: none
 		transform: scale(1.05)
+
 //Курсы КОНЕЦ
 //Почему мы? НАЧАЛО
 .why
@@ -216,9 +252,12 @@
 	//justify-content: space-between
 	align-items: center
 	width: 500px
+	@media (max-width: 1200px)
+		width: 400px
+	@media (max-width: 992px)
+		width: 500px
 	img
-		width: 150px
-		height: 150px
+		height: auto
 		border-radius: 50%
 		margin: 30px 0 0 20px
 	h3
@@ -248,6 +287,8 @@
 	left: -100px
 	width: 118%
 	justify-content: space-between
+	@media (max-width: 1200px)
+		display: none
 .rev-owl-prev
 	display: inline-block
 	cursor: pointer
@@ -304,7 +345,7 @@
 	justify-content: space-between
 	align-items: center
 	height: 693px
-	width: 1110px
+	max-width: 1110px
 	margin-top: 112px
 .blog-box
 	display: flex
@@ -352,3 +393,6 @@
 	width: 100%
 	height: 700px
 	border: none
+//@media screen and (max-width: 1000px)
+	//.owl-item.slider_1
+		//background-size: 50% auto

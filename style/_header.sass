@@ -7,6 +7,8 @@ header
 		display: flex
 		background-color: $clrTopMenu
 		height: 60px
+		@media (max-width: 992px)
+			display: none
 	.container
 		display: flex
 		align-items: center
@@ -31,10 +33,14 @@ header
 			margin-right: 18px
 	.socialblock
 		padding-left: 200px
+		@media (max-width: 1200px)
+			padding-left: 130px
 	.mainmenu
 		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5)
 		display: flex
 		height: 130px
+		@media (max-width: 992px)
+			display: none
 	.mainmenu-logobox
 		img
 			width: 100px
@@ -48,7 +54,46 @@ header
 			font-size: 18px
 		a.bttn
 			color: white
-
+		@media (max-width: 1200px)
+			width: 800px
+	//Для мобилок НАЧАЛО
+	@media (min-width: 992px)
+		.topmenu-mobile
+			display: none
+	@media (max-width: 992px)
+		.topmenu-mobile
+			background-color: $clrTopMenu
+			height: 100px
+			.container
+				display: flex
+				justify-content: space-between
+				align-items: center
+				height: 100%
+		.topmenu-mobile-leftside
+			display: flex
+			justify-content: space-between
+			align-items: center
+			width: 113px
+		.mobile-logo
+			display: flex
+			width: 50px
+			height: auto
+			img
+				width: 100%
+				height: auto
+		.mobile-call
+			display: flex
+			width: 40px
+			height: 40px
+			img
+				width: 100%
+				height: auto
+		.topmenu-mobile-rightside
+			display: flex
+			img
+				width: 40px
+				height: 40px
+	//Для мобилок КОНЕЦ
 
 
 

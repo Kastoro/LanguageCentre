@@ -7,9 +7,18 @@ $('#owl-slider').owlCarousel({
     items:1,
     mouseDrag:false,
     dots:true,
-    autoplay:true,
+    autoplay:false,
     autoplayTimeout:5000,
-    autoplayHoverPause:true
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            mouseDrag:true
+        },
+        1200:{
+        	mouseDrag:false
+        }
+    }
 })
 var owlSlid = $('#owl-slider');
 owlSlid.owlCarousel();
@@ -31,11 +40,24 @@ $('#owl-carousel').owlCarousel({
     nav:false,
     navText: ["&lang;", "&rang;"],
     items:2,
-    mouseDrag:false,
     dots:true,
     autoplay:true,
     autoplayTimeout:5000,
-    autoplayHoverPause:true
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            mouseDrag:true
+        },
+        992:{
+            items:2,
+            mouseDrag:true
+        },
+        1200:{
+        	items:2,
+        	mouseDrag:false
+        }
+    }
 })
 var owlCar = $('#owl-carousel');
 owlCar.owlCarousel();
