@@ -3,6 +3,8 @@
 	height: 477px
 	background-color: $clrTopMenu
 	padding: 90px
+	@media (max-width: 992px)
+		height: auto
 	hr
 		border-color: white
 		height: 2px
@@ -13,22 +15,32 @@
 		color: white
 		font-size: 20px
 .footer-top
+	margin: 0 auto
 	display: flex
 	align-items: flex-start 
 	justify-content: space-around 
 	hr
 		width: 34px
+	@media (max-width: 992px) 
+		width: 250px
+		flex-wrap: wrap
+		justify-content: center
 .footer-menu
 	display: flex
 	flex-direction: column
 	justify-content: space-between
 	width: 138px
 	height: 210px
+	@media (max-width: 992px) 
+		align-items: center
 .footer-contacts
 	display: flex
 	flex-direction: column
 	justify-content: space-between
 	height: 210px
+	@media (max-width: 992px) 
+		margin-top: 40px
+		align-items: center
 	img
 		width: 20px
 		height: 20px

@@ -20,11 +20,13 @@
 		height: 500px
 	@media (max-width: 992px)
 		background-position: 50% 0%
-		background-size: 300px auto
+		background-size: 400px auto
 		height: 550px
 	p
 		font-size: 42px
 		color: white
+		@media (max-width: 992px)
+			font-size: 36px
 	a
 		display:flex
 		align-items: center
@@ -43,8 +45,9 @@
 	justify-content: center
 	align-items: center
 	@media (max-width: 992px)
-		height: 550px
+		height: 70%
 		margin: 120px auto 0 auto
+		justify-content: flex-end
 .owl-item.slider_2
 	height: 650px
 	background-image: url(../images/Slider2.png)
@@ -63,6 +66,10 @@
 	@media (max-width: 1200px)
 		height: 500px
 		background-size: 57%
+	@media (max-width: 992px)
+		background-position: 0% 0%
+		background-size: 380px auto
+		height: 550px
 .slider_2-textbox
 	width: 610px
 	height: 100%
@@ -70,6 +77,11 @@
 	flex-direction: column
 	justify-content: center
 	align-items: center
+	@media (max-width: 992px)
+		height: 70%
+		width: 420px
+		margin: 120px auto 0 auto
+		justify-content: flex-end
 .owl-item.slider_3
 	height: 650px
 	background-image: url(../images/Slider3.png)
@@ -89,6 +101,10 @@
 		img 
 			width: 25px
 			height: 25px
+	@media (max-width: 992px)
+		background-position: 40% 0%
+		background-size: 350px auto
+		height: 550px
 .owl-nav
 	display: flex
 	position: absolute
@@ -150,6 +166,9 @@
 	@media (max-width: 1200px)
 		max-width: 700px
 		height: 900px
+	@media (max-width: 992px)
+		max-width: 700px
+		height: auto
 .courses-box
 	display: flex
 	justify-content: space-between
@@ -158,16 +177,20 @@
 	@media (max-width: 1200px)
 		flex-wrap: wrap
 		justify-content: center
+	@media (max-width: 992px)
+		margin-top: 30px
 .courses-box-item
 	display: flex
 	flex-direction: column
-	width: 240px
+	width: 300px
 	height: 360px
 	background-color: $clrYellow
 	text-decoration: none
 	transition: all 0.8s ease-out
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 	margin: 20px
+	@media (max-width: 992px)
+		height: 60px
 	p
 		display: blok
 		background-color: $clrBlue
@@ -195,7 +218,10 @@
 	height: 520px
 	background-color: $clrBlue
 	margin-top: 123px
-	padding-top: 57px
+	padding-top: 20px
+	@media (max-width: 992px)
+		margin-top: 50px
+		height: auto
 	.container h2
 		display: flex
 		flex-direction: column
@@ -204,6 +230,11 @@
 	margin-top: 70px
 	display: flex
 	justify-content: space-around
+	@media (max-width: 992px)
+		flex-wrap: wrap
+		width: 100px
+		margin: 0 auto
+		margin-top: 20px
 .why-box-item
 	display: flex
 	flex-direction: column
@@ -218,6 +249,9 @@
 		line-height: 35px
 		color: white
 		margin-top: 64px
+		@media (max-width: 992px)
+			margin-top: 10px
+			margin-bottom: 20px
 //Почему мы? КОНЕЦ
 //Отзывы НАЧАЛО
 .reviews
@@ -227,8 +261,14 @@
 	height: 655px
 	width: 100%
 	margin-top: 119px
+	@media (max-width: 992px)
+		margin-top: 20px
 	h2
 		margin-bottom: 90px
+		@media (max-width: 992px)
+			width: 400px
+			text-align: center
+			margin-bottom: 20px
 .carousel
 	background-color: $clrYellow
 	margin-top: 93px
@@ -315,6 +355,8 @@
 	margin-top: 80px
 	padding-top: 48px
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	@media (max-width: 992px)
+		height: auto
 	.container 
 		display: flex
 		flex-direction: column
@@ -324,15 +366,33 @@
 			margin-top: 84px
 			display: flex
 			justify-content: center
+			@media (max-width: 992px)
+				margin-top: 70px
+				margin-bottom: 70px
+		.club-title-desctop
+			@media (min-width: 992px)
+				display: block
+			@media (max-width: 992px)
+				display: none
+		.club-title-mobile
+			@media (min-width: 992px)
+				display: none
+			@media (max-width: 992px)
+				display: block
 .club-box
-	margin-top: 65px
+	margin-top: 45px
 	display: flex
 	justify-content: space-around
 	width: 100%
+	@media (max-width: 992px)
+		width: 300px
+		flex-wrap: wrap
+		margin-top: 20px
 .club-box-item
 	display: flex
 	flex-direction: column
 	align-items: center
+	margin-top: 20px
 	img
 		width: 100px
 		height: 100px
@@ -343,6 +403,8 @@
 		line-height: 35px
 		color: $clrTopMenu
 		margin-top: 55px
+		@media (max-width: 992px)
+			margin-top: 20px
 //Клуб КОНЕЦ
 //Блог НАЧАЛО
 .blog
@@ -353,10 +415,17 @@
 	height: 693px
 	max-width: 1110px
 	margin-top: 112px
+	@media (max-width: 992px)
+		height: auto
+		margin-top: 65px
 .blog-box
 	display: flex
 	justify-content: space-between
 	width: 100%
+	@media (max-width: 992px)
+		width: 400px
+		flex-wrap: wrap
+		justify-content: center
 .blog-box-item
 	display: flex
 	flex-direction: column
@@ -367,6 +436,9 @@
 	transition: all 0.8s ease-out
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 	margin-top: 104px
+	@media (max-width: 992px)
+		height: 66px
+		margin-top: 45px
 	p 
 		display: blok
 		background-color: $clrYellow
@@ -384,6 +456,8 @@
 		width: 100%
 		height: 300px
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+		@media (max-width: 992px)
+			display: none
 	&:hover
 		text-decoration: none
 		transform: scale(1.05)
@@ -392,6 +466,13 @@
 	justify-content: space-between
 	margin-top: 100px
 	width: 600px
+	@media (max-width: 992px)
+		width: 400px
+		justify-content: center
+		margin-top: 60px
+	.bttn-yellow
+		@media (max-width: 992px)
+			display: none
 //Блог КОНЕЦ
 //Карта
 .map
@@ -399,6 +480,13 @@
 	width: 100%
 	height: 700px
 	border: none
+	@media (max-width: 992px)
+		margin-top: 70px
+.map-container
+	margin: 0 auto
+	width: 1200px
+	@media (max-width: 1200px)
+		width: 100%
 //@media screen and (max-width: 1000px)
 	//.owl-item.slider_1
 		//background-size: 50% auto
