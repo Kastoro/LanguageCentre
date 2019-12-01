@@ -73,12 +73,11 @@ $('.rev-owl-prev').click(function() {
 //Карусель КОНЕЦ
 //Мобильное меню НАЧАЛО
 $(".topmenu-mobile-rightside").click(function() {
-	if($('.mobile-call').hasClass("mobile-menu-close")) {
-  	$('.mobile-call').removeClass("mobile-menu-close");
-    $('.mobile-call').addClass("mobile-menu-open");
-  }else {
-  	$('.mobile-call').removeClass("mobile-menu-open");
-    $('.mobile-call').addClass("mobile-menu-close");
-  }
+	$(".topmenu-mobile-box").addClass("mobile-menu-close");
+	$(".topmenu-mobile-bottom").removeClass("mobile-menu-close");
+});
+$(".topmenu-mobile-crossbttn").click(function() {
+	$(".topmenu-mobile-box").removeClass("mobile-menu-close");
+	$(".topmenu-mobile-bottom").addClass("mobile-menu-close");
 });
 //Мобильное меню КОНЕЦ

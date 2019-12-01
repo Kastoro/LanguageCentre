@@ -63,17 +63,53 @@ header
 	@media (max-width: 992px)
 		.topmenu-mobile
 			background-color: $clrTopMenu
-			//height: 100px
+			height: auto
 			.container
 				display: flex
-				justify-content: space-between
+				flex-direction: column
 				align-items: center
-				height: 100%
+		.topmenu-mobile-box
+			display: flex
+			justify-content: space-between
+			align-items: center
+			height: 100px
+			width: 100%
 		.topmenu-mobile-leftside
 			display: flex
 			justify-content: space-between
 			align-items: center
 			width: 113px
+		.topmenu-mobile-bottom
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			height: 500px
+			width: 100%
+			a
+				color: white
+				font-size: 18px
+		.topmenu-mobile-social
+			margin: 0 auto
+			margin-bottom: 40px
+			img
+				width: 20px
+				height: 20px
+				margin-right: 20px
+			img.vk
+				width: 30px
+				height: 18px
+				margin-right: 24px
+				margin-left: 20px
+		.topmenu-mobile-cross
+			display: flex
+			flex-direction: row-reverse
+			width: 100%
+			margin-top: 30px
+			margin-bottom: 15px
+			img
+				width: 15px
+				height: 15px
 		.mobile-logo
 			display: flex
 			width: 50px
