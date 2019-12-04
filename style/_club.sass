@@ -16,7 +16,44 @@
 		padding-bottom: 25px
 		font-size: 20px
 		font-weight: 400
-	img
-		padding: 60px 0 110px
 	span.bold
 		font-weight: bold
+.club-images
+	display: flex
+	margin-top: 81px
+	margin-bottom: 111px
+.club-img-items
+	margin-left: 20px
+.club-img
+	display: flex
+	margin-top: 20px
+.club_sm_right
+	margin-left: 20px
+//для планшетов
+@media (max-width: 1200px)
+	.club-images
+		margin: 0 auto
+		max-width: 756px
+		flex-direction: column
+		margin-top: 40px
+		margin-bottom: 60px
+		align-items: center
+		.club_lg
+			width: 580px
+			height: 435px
+		.club-img-items
+			margin-left: 0px
+			margin-top: 20px
+			.club_md
+				width: 580px
+				height: 285px
+	.club_sm_left
+		width: 250px
+		height: 250px
+	.club_sm_right
+		width: 307px
+
+
+
+
+
