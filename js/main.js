@@ -5,9 +5,8 @@ $('#owl-slider').owlCarousel({
     nav:false,
     navText: ["&lang;", "&rang;"],
     items:1,
-    mouseDrag:false,
     dots:true,
-    autoplay:false,
+    autoplay:true,
     autoplayTimeout:5000,
     autoplayHoverPause:true,
     responsiveClass:true,
@@ -72,3 +71,13 @@ $('.rev-owl-prev').click(function() {
     owlCar.trigger('prev.owl.carousel', [300]);
 })
 //Карусель КОНЕЦ
+//Мобильное меню НАЧАЛО
+$(".topmenu-mobile-rightside").click(function() {
+	$(".topmenu-mobile-box").addClass("mobile-menu-close");
+	$(".topmenu-mobile-bottom").removeClass("mobile-menu-close");
+});
+$(".topmenu-mobile-crossbttn").click(function() {
+	$(".topmenu-mobile-box").removeClass("mobile-menu-close");
+	$(".topmenu-mobile-bottom").addClass("mobile-menu-close");
+});
+//Мобильное меню КОНЕЦ
