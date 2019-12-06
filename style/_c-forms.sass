@@ -1,0 +1,128 @@
+.cform_header 
+  color: #2C3963
+  padding: 40px 58px 45px 58px
+  text-align: center
+
+\::placeholder
+  color: #2C3963
+  opacity: 50%
+  font-size: 18px
+  padding-left: 13px
+
+.close
+  display: inline-block
+  float: right
+  padding: 16px 16px 0px 0px
+  color: #2C3963
+
+/*заказать звонок*/
+
+#order_call
+  background: rgba(102, 102, 102, 0.5)
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+
+#c_form_new
+  padding-top: 0px
+  margin: 0 auto
+  height: 600px
+  width: 400px
+  border: 0.5px solid #2C3963
+  position: absolute
+  background-color: #fff
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
+
+#order_call:target
+  display: block
+  z-index: 2
+
+/*бесплатный урок*/
+
+#free-lesson
+  background: rgba(102, 102, 102, 0.5)
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+
+  &:target
+    display: block
+    z-index: 2
+
+/*подписаться на рассылку*/
+
+#following
+  background: rgba(102, 102, 102, 0.5)
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+
+#c_form_follow
+  padding-top: 0px
+  margin: 0 auto
+  height: 500px
+  width: 400px
+  border: 0.5px solid #2C3963
+  position: absolute
+  background-color: #fff
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
+
+#following:target
+  display: block
+  z-index: 2
+
+/*стили формы*/
+
+.wrap-form
+  display: flex
+  align-items: center
+  justify-content: center
+
+.name
+  padding-bottom: 40px
+
+.c-form
+  height: 60px
+  width: 304px
+  border: 1px solid #2C3963
+  font-size: 20px
+  line-height: 30px
+
+  /* or 150%*/
+  letter-spacing: 0.01em
+  color: #2C3963
+
+.asterisk
+  position: relative
+  color: #2C3963
+  padding-left: 8px
+  padding-bottom: 40px
+
+.btn
+  display: flex
+  justify-content: center
+  padding-bottom: 50px
+  padding-top: 40px
+  box-shadow: none
+
+.btn-follow
+  display: flex
+  justify-content: center
+  padding-top: 40px
