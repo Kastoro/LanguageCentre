@@ -1,9 +1,11 @@
 .articlewrap
 	margin: 0 auto
-	width: 756px
+	max-width: 756px
 	img.block
 		display: block
 		padding-bottom: 40px
+		@media (max-width: 755px)
+			display: none
 	p		
 		font-family: Roboto
 		font-style: normal
@@ -46,21 +48,27 @@
 	display: flex
 	justify-content: space-between
 	margin: 0 auto
-	width: 968px
+	max-width: 968px
 	h3.center
 		width: 420px
 		display: flex
 		align-items: center
+		@media (max-width: 967px)
+			margin: 0 auto		
 	img.block
 		display: block
 		padding-bottom: 60px
 		padding-top: 60px
+		@media (max-width: 967px)
+			display: none
 .article-end-wrap
 	margin: 0 auto	
 	display: flex
 	justify-content: space-between
 	margin: 0 auto
-	width: 968px	
+	max-width: 968px
+	@media (max-width: 967px)
+			display: none		
 	h6
 		font-family: Roboto
 	h6.btnsize
@@ -82,6 +90,6 @@
 		line-height: 60px
 .blog-box-bttns.article
 	margin: 0 auto
-	width: 680px
+	max-width: 680px
 	padding-bottom: 140px
 	padding-top: 47px
