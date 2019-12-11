@@ -1,23 +1,19 @@
-.cform_header 
-  color: #2C3963
-  padding: 40px 58px 45px 58px
-  text-align: center
-
+// нечто общее
 \::placeholder
   color: #2C3963
   opacity: 50%
   font-size: 18px
-  padding-left: 13px
 
 .close
   display: inline-block
   float: right
   padding: 16px 16px 0px 0px
   color: #2C3963
+input 
+  padding-left: 20px
+  box-sizing: border-box
 
-/*заказать звонок*/
-
-#order_call
+#following-page
   background: rgba(102, 102, 102, 0.5)
   width: 100%
   height: 100%
@@ -25,6 +21,44 @@
   top: 0
   left: 0
   display: none
+#following-page:target
+  display: block
+  z-index: 2
+#c_form_follow-page
+  padding-top: 0px
+  margin: 0 auto
+  height: 500px
+  width: 400px
+  border: 0.5px solid #2C3963
+  position: absolute
+  background-color: #fff
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
+
+//ФОРМЫ НАЧАЛО
+// внешний вид пространства вокруг формы
+#order_call, #free-lesson, #following
+  background: rgba(102, 102, 102, 0.5)
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+
+// появление формы при нажатии
+#order_call:target, #free-lesson:target, #following:target
+  display: block
+  z-index: 2
+
+// внешний вид форм
+.cform_header 
+  color: #2C3963
+  padding: 40px 58px 45px 58px
+  text-align: center
 
 #c_form_new
   padding-top: 0px
@@ -40,37 +74,7 @@
   left: 0
   margin: auto
 
-#order_call:target
-  display: block
-  z-index: 2
-
-/*бесплатный урок*/
-
-#free-lesson
-  background: rgba(102, 102, 102, 0.5)
-  width: 100%
-  height: 100%
-  position: fixed
-  top: 0
-  left: 0
-  display: none
-
-  &:target
-    display: block
-    z-index: 2
-
-/*подписаться на рассылку*/
-
-#following
-  background: rgba(102, 102, 102, 0.5)
-  width: 100%
-  height: 100%
-  position: fixed
-  top: 0
-  left: 0
-  display: none
-
-#c_form_follow
+#c_form_follow, //#c_form_follow-page
   padding-top: 0px
   margin: 0 auto
   height: 500px
@@ -84,44 +88,6 @@
   left: 0
   margin: auto
 
-#following:target
-  display: block
-  z-index: 2
-
-
-#callback-15-min
-  background: rgba(102, 102, 102, 0.5)
-  width: 100%
-  height: 100%
-  position: fixed
-  top: 0
-  left: 0
-  display: none
-
-#c_form_callback
-  padding-top: 0px
-  margin: 0 auto
-  height: 200px
-  width: 500px
-  border: 0.5px solid #2C3963
-  position: absolute
-  background-color: #fff
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
-  margin: auto
-  text-align: center
-  h6
-    margin: 20px
-
-
-#callback-15-min:target
-  display: block
-  z-index: 2
-
-
-/*стили формы*/
 .wrap-form
   display: flex
   align-items: center
@@ -158,3 +124,92 @@
   display: flex
   justify-content: center
   padding-top: 40px
+
+//ФОРМЫ КОНЕЦ
+
+
+// ОТВЕТНЫЕ ПОП_АПЫ НАЧАЛО
+
+.callback_header 
+  color: #2C3963
+  padding: 40px 30px 45px 30px
+  text-align: center
+
+#callback-15-min,#callback-free-lesson, #callback-following, #callback-following-page
+  background: rgba(102, 102, 102, 0.5)
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+
+#callback-15-min:target, #callback-free-lesson:target, #callback-following:target, #callback-following-page:target
+  display: block
+  z-index: 2
+
+// заказать звонок
+#callback-15-min-text
+  padding-top: 0px
+  margin: 0 auto
+  height: 200px
+  width: 500px
+  border: 0.5px solid #2C3963
+  position: absolute
+  background-color: #fff
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
+  text-align: center
+  h6
+    margin: 20px
+
+//бесплатный урок (ответные поп-апы)
+#callback-free-lesson-text
+  padding-top: 0px
+  margin: 0 auto
+  height: 230px
+  width: 500px
+  border: 0.5px solid #2C3963
+  position: absolute
+  background-color: #fff
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
+  text-align: center
+  h6
+    margin: 20px
+//подписаться на рассылку (ответные поп-апы)
+
+#callback-following-text
+  padding-top: 0px
+  margin: 0 auto
+  height: 150px
+  width: 400px
+  border: 0.5px solid #2C3963
+  position: absolute
+  background-color: #fff
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
+  text-align: center
+  h6
+    margin: 20px
+
+//ОТВЕТНЫЕ ПОП_АПЫ КОНЕЦ
+
+
+//ОТОБРАЖЕНИЕ НА МОБИЛЬНЫХ УСТРОЙСТВАХ
+#free-lesson
+  #c_form_new
+    @media(max-width: 600px)
+      width: 100%
+#callback-free-lesson-text
+  @media(max-width: 600px)
+      width: 100%

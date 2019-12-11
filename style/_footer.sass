@@ -1,8 +1,8 @@
 .footer
 	display: flex
-	height: 477px
+	height: auto
 	background-color: $clrTopMenu
-	padding: 90px	
+	padding: 90px 90px 20px	
 	hr
 		border-color: white
 		height: 2px
@@ -13,7 +13,7 @@
 		color: white
 		font-size: 20px
 	@media (max-width: 480px)
-		height: 900px
+		height: 700px
 		padding-top: 40px
 		padding-left: 40px
 		padding-right: 40px
@@ -24,19 +24,21 @@
 	justify-content: space-around 
 	hr
 		width: 34px
-	@media (max-width: 480px)
+	@media (max-width: 700px)
 		flex-wrap: wrap
 		height: 500px		
 .footer-menu
 	display: flex
 	flex-direction: column
 	justify-content: space-between
+	align-items: center
 	width: 240px
 	height: 210px	
 .footer-contacts
 	display: flex
 	flex-direction: column
 	justify-content: space-between
+	align-items: center
 	height: 210px	
 	img
 		width: 20px

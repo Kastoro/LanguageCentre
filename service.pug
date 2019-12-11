@@ -16,21 +16,22 @@ body
 	.wrapper
 		include blocks/header
 		include blocks/c-forms
-		.service-wrap
-			h2 НАШИ КУРСЫ
-			.courses-box
-				a.courses-box-item(href="adult.html")
-					p.p-courses Для взрослых
-					img(src="./images/man.png", alt="man")
-				a.courses-box-item(href="child.html")
-					p Для детей и<br>пoдростков
-					img(src="./images/girl.png", alt="girl")
-				a.courses-box-item(href="exams.html")
-					p Подготовка к<br>экзаменам
-					img(src="./images/boy.png", alt="boy")
-				a.courses-box-item(href="profcourses.html")
-					p Специальный<br>английский
-					img(src="./images/woman.png", alt="woman")
+		.container
+			.courses-page
+				h2 НАШИ КУРСЫ
+				.courses-box
+					a.courses-box-item(href="adult.html")
+						p.p-courses Для взрослых
+						img(src="./images/man.png", alt="man")
+					a.courses-box-item(href="child.html")
+						p Для детей и<br>пoдростков
+						img(src="./images/girl.png", alt="girl")
+					a.courses-box-item(href="exams.html")
+						p Подготовка к<br>экзаменам
+						img(src="./images/boy.png", alt="boy")
+					a.courses-box-item(href="profcourses.html")
+						p Специальный<br>английский
+						img(src="./images/woman.png", alt="woman")
 		include blocks/footer
 	//Скрипты НАЧАЛО
 	+scripts(['jquery.min.js', 'owl.carousel.min.js', 'main.js'])
