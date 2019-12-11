@@ -1,5 +1,5 @@
 .wrap
-	width: 900px
+	max-width: 900px
 	margin: 0 auto
 .pricetext
 	padding-bottom: 135px
@@ -8,6 +8,9 @@
 	tr
 		height: 66px
 		font-size: 14px
+		@media (max-width: 480px)
+			font-size: 10px
+			font-weight: normal
 		text-align: center
 	td
 		border: 1px solid #9E9E9E
@@ -15,16 +18,18 @@
 		padding-top: 96px
 		padding-bottom: 96px
 	h6
-		width: 830px
+		max-width: 830px
 		font-size: 14px
 		padding-top: 15px
 		margin: 0 auto
 .discount
-	width: 900px
+	max-width: 900px
 	tbody
 		tr
 			td.yellow
 				width: 213px
+				@media (max-width: 480px)
+					width: 120px
 	margin-bottom: 120px
 thead
 	background-color: #3CC2C3
@@ -33,5 +38,5 @@ th.size
 .yellow
 	background-color: #FBEDBA
 .price
-	width: 900px
+	max-width: 900px
 	margin-bottom: 75px
