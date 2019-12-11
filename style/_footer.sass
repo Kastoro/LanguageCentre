@@ -2,9 +2,7 @@
 	display: flex
 	height: 477px
 	background-color: $clrTopMenu
-	padding: 90px
-	@media (max-width: 992px)
-		height: auto
+	padding: 90px	
 	hr
 		border-color: white
 		height: 2px
@@ -14,6 +12,11 @@
 	p
 		color: white
 		font-size: 20px
+	@media (max-width: 480px)
+		height: 900px
+		padding-top: 40px
+		padding-left: 40px
+		padding-right: 40px
 .footer-top
 	margin: 0 auto
 	display: flex
@@ -21,26 +24,20 @@
 	justify-content: space-around 
 	hr
 		width: 34px
-	@media (max-width: 992px) 
-		width: 250px
+	@media (max-width: 480px)
 		flex-wrap: wrap
-		justify-content: center
+		height: 500px		
 .footer-menu
 	display: flex
 	flex-direction: column
 	justify-content: space-between
-	width: 138px
-	height: 210px
-	@media (max-width: 992px) 
-		align-items: center
+	width: 240px
+	height: 210px	
 .footer-contacts
 	display: flex
 	flex-direction: column
 	justify-content: space-between
-	height: 210px
-	@media (max-width: 992px) 
-		margin-top: 40px
-		align-items: center
+	height: 210px	
 	img
 		width: 20px
 		height: 20px
@@ -48,7 +45,7 @@
 	img.vk
 		width: 30px
 		height: 18px
-		margin-right: 20px
+		margin-right: 20px	
 .footer-bottom
 	margin-top: 90px
 	p
@@ -59,3 +56,5 @@
 		text-align: center
 		margin-bottom: 20px
 		margin-top: 10px
+	@media (max-width: 480px)
+		margin-top: 40px
